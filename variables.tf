@@ -17,7 +17,10 @@ variable "security_group" {
   description = "Name of security group"
   default     = "default"
 }
-
+variable "aws_iam_role" {
+  description = "Name of the IAM role"
+  default     = "ec2-tf-role"
+}
 variable "tag_name" {
   description = "Tag Name of for Ec2 instance"
   default     = "Test_instance"
